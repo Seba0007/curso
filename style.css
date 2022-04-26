@@ -8,7 +8,7 @@
 .navbar {
     display: flex;
     align-items: center;
-    padding: 13px;
+    padding: 0;
     margin: 0;
 }
 
@@ -52,6 +52,12 @@
     color: gold;
 }
 
+.navbar .container-fluid .btn{
+    text-align: center;
+    /* background-color: aqua; */
+    width: 100%;
+}
+
 
 .navbar-2 button{
     margin-left: 30px;
@@ -59,9 +65,59 @@
     background: none;
     color: rgb(223, 217, 217);
     padding: 0.1em;
-    border-right: 1px solid rgb(73, 73, 73);
     font-size: 13px;
 }
-.navbar-2 button:last-child{
+/* .navbar-2 button:last-child{
     border-right: none;
+} */
+.navbar  .menu-btn i{
+    font-size: 23px;
+    cursor: pointer;
+    color: aliceblue;
+    display: none;
+}
+
+/* sale section  */
+
+/* .contenedor{
+    display: flex;
+
+} */
+
+
+
+
+
+
+@media(max-width: 765px) {
+    .menu-btn{
+        position: fixed;
+        display: block;
+        z-index: 9999;
+    }
+
+    .navbar .btn{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        /* left: -100%; */
+        top: 0;
+        /* background: #111; */
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar .btn button{
+        display: block;
+        color: white;
+        z-index: 9999;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+
+    }
+    /* .navbar  */
+    /* .carousel{
+        display: none;
+    } */
 }
